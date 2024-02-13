@@ -3,21 +3,22 @@ html
     background-image: url("./background-green-01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     background-position: center center;
 }
 
-.container{
+.layout01{
     position:relative;
+    margin: 15% 0 0 35%;
     width: 40%;
     height: 40%;
     max-width: 400px;
+    padding: 10px;
     border: solid white;
     border-radius: 10px;
-    /* padding: 10px; */
-    margin: 15% 0 0 35%;
-    padding: 2%
+    
 }
 
 h2{
@@ -45,4 +46,119 @@ h4{
 .buy_button:hover {
     background-color: #9c8ef4;
     color: white;
+}
+
+/*Navigation Bars*/
+
+.navigation-bar
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    margin-top: 0%;
+}
+
+li 
+{
+    display:inline;
+    float: left;
+    margin-right: 10px;
+}
+
+li a 
+{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #edf4ee;
+}
+
+li a:hover 
+{
+    background-color: #566104;
+}
+
+.home
+{
+    float: left;
+    border: 2px solid #eef3ee;
+    border-radius: 5px;
+    /* background-color: white; */
+    color: #330206 !important;
+}
+
+.product
+{
+    float: right;  
+    border: 1px solid #eef3ee;
+    border-radius: 5px;
+    color: #edf4ee;
+}
+
+.user
+{
+    float: right;
+    border: 1px solid #eef3ee;
+    border-radius: 5px; 
+}
+.cart
+{
+    float: right; 
+    border: 1px solid #eef3ee;
+    border-radius: 5px; 
+}
+
+/*layout02*/
+
+.flex-box-container {
+    display: flex;  
+    flex-wrap: wrap; 
+    /* justify-content: centre; */
+    justify-content: space-around;
+}
+
+.item {
+    /* margin: 10% 0 10% 10%; */
+    border: 2px solid rgb(129, 135, 3);
+    color: white;
+    width: 30%;
+    min-width: 250px;
+    margin-top: 10px;
+}
+
+.img-item
+{
+    position:relative;
+    height: 300px;
+    width:100%;
+}
+
+h3{
+    position:relative;
+    padding-left: 10px;
+    margin-top: 10px;
+} 
+
+p {
+    position:relative;
+    padding: 0 10px;
+    z-index: 1;
+    text-wrap: wrap;
+} 
+
+.buy-button
+{
+    float:right;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    /* margin-left: 80%; */
+    padding:15px 32px;
+    background-color: #ebf696;
+    color: rgb(1, 31, 6);
+    font-size: 16px;
+    z-index: -1;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
