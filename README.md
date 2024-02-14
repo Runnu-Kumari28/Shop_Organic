@@ -9,11 +9,12 @@
 **Target Audience:** Consumers interested in buying organic produce, meat, and dairy products.
 Individuals curious about organic farming practices and their environmental impact.
 Farmers and businesses involved in organic agriculture.
-Key Layout Elements:
+
 
 **Features:**
 * Captivating visuals showcasing the beauty and bounty of organic farms.
 * Clear message highlighting the website's value proposition.
+* smooth and easy navigation.
 
 **Navigation**:
 * Intuitive and well-organized menu with sections for:
