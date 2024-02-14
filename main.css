@@ -1,12 +1,25 @@
 html
 {
-    background-image: url("./background-green-01.jpg");
+    background-image: url("./resources/background-green-01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
     min-height: 100vh;
     width: 100%;
     background-position: center center;
+}
+
+.logo{
+    /* height:40px; */
+    /* width:80px; */
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    color:#84b570;
+    justify-content: center;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    /* background-color: #012808; */
 }
 
 .layout01{
@@ -36,11 +49,15 @@ h4{
 .buy_button {
     position:relative;
     background-color: rgb(230, 237, 230);
-    border-radius: 5px;
+    border-radius: 10px;
     width: 30%;
-    height: 50%;
+    height: 30%;
     margin-left: 60%;
-    background-color:cornflowerblue;
+    padding:10px;
+    font-size: 16px;
+    background-color:rgb(177, 242, 11);
+    text-align: center;
+
 }
 
 .buy_button:hover {
@@ -80,41 +97,44 @@ li a:hover
     background-color: #566104;
 }
 
-.home
-{
-    float: left;
+.home{
+    float: right;
     border: 2px solid #eef3ee;
     border-radius: 5px;
     /* background-color: white; */
     color: #330206 !important;
 }
 
-.product
-{
-    float: right;  
-    border: 1px solid #eef3ee;
-    border-radius: 5px;
-    color: #edf4ee;
-}
-
-.user
-{
-    float: right;
-    border: 1px solid #eef3ee;
-    border-radius: 5px; 
-}
-.cart
-{
+.contact{
     float: right; 
     border: 1px solid #eef3ee;
     border-radius: 5px; 
 }
 
-/*layout02*/
+.product{
+    float: right;  
+    border: 1px solid #eef3ee;
+    border-radius: 5px;
+    color: #edf4ee;
+} 
+
+.about-us{
+    float: right;
+    border: 1px solid #eef3ee;
+    border-radius: 5px; 
+}
+
+
+
+
+
+
+/*Product*/
 
 .flex-box-container {
     display: flex;  
     flex-wrap: wrap; 
+    flex-grow: 1;
     /* justify-content: centre; */
     justify-content: space-around;
 }
@@ -124,10 +144,14 @@ li a:hover
     border: 2px solid rgb(129, 135, 3);
     color: white;
     width: 30%;
+    max-width: 380px;
     min-width: 250px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
+.item:hover {
+    background-color: #566104;
+}
 .img-item
 {
     position:relative;
@@ -161,4 +185,113 @@ p {
     z-index: -1;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.buy-button:hover{
+    background-color: #dd9b3f;
+}
+
+/* About-Us*/
+
+.non_gmo
+{
+   height:40%;
+   width:85%;
+   justify-content: center; 
+   /* border: 2px solid white; */
+   margin-top: 5%;
+   margin-left: 7%;
+   padding: 10px;
+   font-size:large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+}
+
+.non_gmo:hover{
+    background-color: #566104;
+}
+.non_gmo h3
+{
+    
+   color: white;
+   text-align: center; 
+}
+
+.non_gmo p
+{
+    color: #d4c009;
+}
+
+/* Contact*/
+.contact-item{
+    
+        display: flex;  
+        flex-wrap: wrap; 
+        flex-grow: 1;
+        /* justify-content: centre; */
+        justify-content: space-around;
+}
+
+.item {
+    /* margin: 10% 0 10% 10%; */
+    border: 2px solid rgb(129, 135, 3);
+    color: white;
+    width: 30%;
+    max-width: 380px;
+    min-width: 250px;
+    margin-top: 25px;
+    
+    
+}
+
+.item:hover {
+    background-color: #566104;
+}
+
+.wrapper{
+    width: 180px;
+    max-width:100%;
+    position:relative;
+}
+.wrapper input {
+    background-color: #eff5be;
+    font-size: small;
+    font-weight: bold ;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.wrapper input:hover{
+    background-color: #f3aa6d;
+}
+.wrapper button{
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 80%;
+    aspect-ratio: 1;
+    position: absolute;
+    left:92%;
+    right: 10px;
+    top:5px;
+    bottom: 10px;
+}
+
+.wrapper button:hover{
+    background-color: #f3aa6d;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 20%;
+    color: #fff;
+}
+
+.item-contact {
+    color: white;
+    width: 30%;
+    max-width: 280px;
+    min-width: 250px;
+    margin-top: 25px;
 }
